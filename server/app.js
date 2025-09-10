@@ -8,7 +8,10 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['your-frontend-url.vercel.app'] 
+    ? [
+	'https://vercel.com/apoorvas-projects-dddbcb90/mern-todo-frontend',
+	'http://localhost:3000'
+	] 
     : ['http://localhost:3000'],
   credentials: true
 }));
