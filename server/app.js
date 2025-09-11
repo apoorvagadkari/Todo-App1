@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [
-	'https://vercel.com/apoorvas-projects-dddbcb90/mern-todo-frontend',
+	'https://mern-todo-frontend-dynqspv1d-apoorvas-projects-dddbcb90.vercel.app',
 	'http://localhost:3000'
 	] 
     : ['http://localhost:3000'],
