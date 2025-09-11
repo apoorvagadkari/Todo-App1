@@ -23,7 +23,7 @@ function App() {
       setError(null);
     } catch (error) {
       console.error('Error fetching tasks:', error);
-      setError('Failed to load tasks. Make sure your backend server is running on port 5000.');
+      setError('Failed to load tasks. Due to potential connectivity problem.');
     } finally {
       setLoading(false);
     }

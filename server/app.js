@@ -4,7 +4,13 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-
+app.use((req, res, next) => {
+  if (req.header('x-forwarded-proto') !== 'https') {
+    res.redirect(`https://${req.header('host')}${req.url}`);
+  } else {
+    next();
+  }
+});
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
