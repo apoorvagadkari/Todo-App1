@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [
-	'https://mern-todo-frontend-dynqspv1d-apoorvas-projects-dddbcb90.vercel.app',
+	'https://apoorvagadkari.github.io',
 	'http://localhost:3000'
 	] 
     : ['http://localhost:3000'],
