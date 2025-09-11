@@ -10,6 +10,7 @@ app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [
 	'https://apoorvagadkari.github.io',
+	'https://todo-app1-backend.onrender.com',
 	'http://localhost:3000'
 	] 
     : ['http://localhost:3000'],
